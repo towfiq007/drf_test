@@ -1,0 +1,20 @@
+curl   -X POST   -H "Content-Type: application/json"   -d '{"username": "admin", "password": "admin"}'   http://localhost:8000/api/token/
+
+
+curl   -X POST   -H "Content-Type: application/json"   -d '{"refresh": ""}'   http://localhost:8000/api/token/refresh/
+
+
+curl   -X POST   -H "Content-Type: application/json"   -d '{"token": ""}'   http://localhost:8000/api/token/verify/
+
+
+
+
+curl   -X GET   -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTcyOTIzLCJpYXQiOjE2OTY5NzI2MjMsImp0aSI6IjhjYzZmYzRhMGQwNzRlMzU5NzkxODBiNjM5NGMzYjE5IiwidXNlcl9pZCI6MX0.38w9wmNK9_1oAwqbcHl0MiL-t0kyKi8uFoOoCXzd5Fc"  -d '{}'   http://localhost:8000/test_jwt/
+
+
+
+
+
+
+
+{"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY5NzA1OTAyMywiaWF0IjoxNjk2OTcyNjIzLCJqdGkiOiI2NTg4NDBkOWY0MjQ0MTdhYjZiZDllNTVjNWFmZDFmOCIsInVzZXJfaWQiOjF9.GC-1tAUUQzcjpyyQwNQkZsIOuKA3J8y4sm8LVDudPXU","access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjk2OTcyOTIzLCJpYXQiOjE2OTY5NzI2MjMsImp0aSI6IjhjYzZmYzRhMGQwNzRlMzU5NzkxODBiNjM5NGMzYjE5IiwidXNlcl9pZCI6MX0.38w9wmNK9_1oAwqbcHl0MiL-t0kyKi8uFoOoCXzd5Fc"}
